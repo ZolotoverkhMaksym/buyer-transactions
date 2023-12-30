@@ -22,6 +22,7 @@ main()
 export default function Home() {
   return (
     <main className={styles.main}>
+      <div className="text-3xl font-bold underline text-gray-200">Hello, Next.js!</div>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
