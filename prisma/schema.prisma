@@ -14,5 +14,6 @@ model user {
   id String @id @default(cuid())
   login String @unique
   password String
+  name String
   creationDate DateTime @default(now())
 }
