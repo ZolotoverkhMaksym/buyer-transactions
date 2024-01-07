@@ -32,14 +32,18 @@ export default function Home() {
   const submit = () => {
 console.log(form)
   }
-
   
-
   return (
-    <div>
-     <input value={form.login} onChange={event => handleLoginChange(event.target.value)} type="text"/>
-     <input value={form.password} onChange={event => handlePasswordChange(event.target.value)} type="text"/>
-     <button className={styles.button} onClick={submit}>Submit</button>
+    <div className={styles.logins}>
+      <div className={styles.box}>
+      <div className={styles.title}>Sign in to my Profile</div>
+      <button className={styles.google} onClick={submit}>Continue with Google</button>
+      <span className={styles.span}>or</span>
+     <input className={styles.input} value={form.login} onChange={event => handleLoginChange(event.target.value)} placeholder="Login" type="login"/>
+     <input className={styles.input} value={form.password} onChange={event => handlePasswordChange(event.target.value)} placeholder="Password" type="password"/>
+     <button className={styles.button} onClick={submit}>Log in</button>
+     </div>
     </div>
   )
 }
+

@@ -1,3 +1,72 @@
-.button {
-  color: red;
+.logins {
+  background-color: white;
+ display: flex;
+ justify-content: center;
+ height: 100vh;
+ align-items:center;
+ flex-direction:column;
+ margin: auto;
+ width: 100%;
+}
+
+.box {
+  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 422px;
+    padding: 36px;
+    font-size: 16px;
+    min-height: 120px;
+    -webkit-font-smoothing: antialiased;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title {
+  color: black;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 125%;
+}
+
+.google {
+  border-radius: 8px;
+  height: 50px;
+  // width: 350px;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.span {
+  color: black;
+  height: 50px;
+  // width: 350px;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.input {
+background-color: rgb(255, 255, 255);
+color: black;
+// width: 350px;
+height: 50px;
+font-size: 16px;
+// margin-top: 15px;
+border: radius 6px;
+}
+
+.button{
+  background-color: #2c2c2c;
+   color: white;
+  //  width: 350px;
+  width: 100%;
+   height: 50px;
+   margin-top: 15px;
+   font-size: 16px;
+   border-radius: 8px;
 }
