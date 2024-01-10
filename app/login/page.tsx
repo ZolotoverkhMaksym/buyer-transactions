@@ -35,13 +35,18 @@ console.log(form)
   
   return (
     <div className={styles.logins}>
-      <div className={styles.box}>
       <div className={styles.title}>Sign in to my Profile</div>
-      <button className={styles.google} onClick={submit}>Continue with Google</button>
-      <span className={styles.span}>or</span>
+      <div className={styles.box}>
+      <button className={styles.google} onClick={submit}><div className={styles.icon}></div>Continue with Google</button>
+      <span className={styles.span}> or </span>
+      <div className={styles.span}> or </div>
      <input className={styles.input} value={form.login} onChange={event => handleLoginChange(event.target.value)} placeholder="Login" type="login"/>
      <input className={styles.input} value={form.password} onChange={event => handlePasswordChange(event.target.value)} placeholder="Password" type="password"/>
      <button className={styles.button} onClick={submit}>Log in</button>
+     <div className={styles.title}></div>
+     <div><a className={styles.blue_link} href="#">Use single sing-on</a></div>
+     <div><a className={styles.blue_link} href="#">Reset password</a></div>
+     <div className={styles.silver}>No account?&nbsp;<a className={styles.blue_link} href="#">Create one</a></div>
      </div>
     </div>
   )
